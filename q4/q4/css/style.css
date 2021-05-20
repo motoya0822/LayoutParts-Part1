@@ -1,1 +1,45 @@
 @charset "UTF-8";
+
+.sub--box {
+  display: table;/*親要素にdisplay:table*/
+  width: 100%;
+  margin-top: 50px;
+}
+
+.table--box {
+  display: table-cell;/*横並び*/
+  padding: 20px;
+  text-align: center;/*文字中央寄せ*/
+}
+
+.red--box {
+  width: 300px;/*固定で横幅指定*/
+  background: #ff7b7b;
+}
+
+.blue--box {
+  background: #7b86ff;
+}
+
+.yellow--box {
+  width: 300px;/*固定で横幅指定*/
+  background: #fff27b;
+}
+
+.green--box {
+  background: #7bff91;
+}
+
+.pink--box {
+  width: 400px;/*固定で横幅指定*/
+  background: #ff7be2;
+}
+
+.orange--box {/*固定で横幅指定*/
+  width: 400px;
+  background: #ffc67b;
+}
+
+.lightblue--box {
+  background: #7bf2ff;
+}

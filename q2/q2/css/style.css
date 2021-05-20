@@ -1,2 +1,18 @@
 @charset "UTF-8";
 /* 回答はここから */
+.list {
+  display: flex;/* 直下の要素が並列になる */
+  justify-content: center;/* 左右中央寄せ */
+}
+
+
+.list--card {
+  list-style: none;/* 初めの記号を消す */
+  width: 200px;
+  margin: 30px;
+  outline: 10px solid #655;
+  box-shadow: 0 0 0 6px #655;/* 影　6ｐｘで広がり拡大 */
+  border-radius: 13px;
+  padding: 10px;
+  background: #d2b48c;
+}

@@ -1,2 +1,69 @@
 @charset "UTF-8";
 /* 回答はここから */
+.box{
+  display:inline-block;
+  padding: 20px 0px;
+  width: 200px;
+  background-color: #ffffff;
+}
+
+.box1-1{
+text-align: center;/* 真中へ */
+}
+
+.text1{
+display:inline-block;
+padding:10px;
+background-color: #a4b3e9;
+}
+
+
+.text2{
+  display:inline-block;
+  padding:10px;
+  text-align: center;
+  margin: 0 auto;/* marginで真中 */
+  width: 90px;
+  background-color: #a4b3e9;
+  }
+
+  .table{
+    display: table;/* ブロックレベル要素をtableと同じように表示にする */
+  }
+
+  .cell{
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;/*縦位置を調整する*/
+  }
+
+  .text3{
+    padding: 10px;
+    background-color: #ffffff;
+    font-size: 16px;
+    display:inline-block;
+  }
+
+  .d--flex{
+    display: flex;
+    justify-content: center;/*左右中央*/
+    align-items: center;/*上下中央*/
+  }
+
+  .flex--text{
+    padding: 10px;
+    background-color: #ffffff;
+  }
+
+  .relative{
+    position: relative;/*起点*/
+  }
+
+  .absolute{
+    position: absolute;/*起点からどれだけ離れているか*/
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);/*位置調整*/
+    padding:10px;
+    background-color: #a4b3e9;
+  }

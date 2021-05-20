@@ -1,1 +1,130 @@
 @charset "UTF-8";
+
+.flex--item {
+  width: 65px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  background: #00bbdd;
+  color: #fff;
+}
+
+/*5-1*/
+
+.d--flex--row {
+  display: flex;/*HTMLブロックを横並び*/
+  flex-direction: row;/*起点・終点の位置は、インライン要素と同様*/
+}
+
+.d--flex--row--reverse {
+  display: flex;
+  flex-direction: row-reverse;/*フレックスアイテムは逆向きに配置*/
+}
+
+.d--flex--column {
+  display: flex;
+  flex-direction: column;/*フレックスアイテムは上から下に配置*/
+}
+
+.d--flex--column--reverse {
+  display: flex;
+  flex-direction: column-reverse;/*主軸はcolumnと同じだが、逆向き*/
+}
+
+/*5-2*/
+
+.d--flex--nowrap {
+  display: flex;
+  flex-wrap: nowrap;/*折り返しなし*/
+}
+
+.d--flex--wrap {
+  display: flex;
+  flex-wrap: wrap;/*折り返す*/
+}
+
+.d--flex--wrap--reverse {
+  display: flex;
+  flex-wrap: wrap-reverse;/*逆方向に折り返す。積み上げの方向が逆になって下から上に積み上がる*/
+}
+
+/*5-3*/
+
+.d--flex--start {
+  display: flex;
+  justify-content: flex-start;/*先頭に寄せる*/
+}
+
+.d--flex--end {
+  display: flex;
+  justify-content: flex-end;/*末尾に寄せる*/
+}
+
+.d--flex--center {
+  display: flex;
+  justify-content: center;/* 中央に寄せる */
+}
+
+.d--flex--between {
+  display: flex;
+  justify-content: space-between;/* 均等・先頭、末尾寄せ */
+}
+
+.d--flex--around {
+  display: flex;
+  justify-content: space-around;/* 均等・各アイテムの両側に半分の大きさの間隔 */
+}
+
+/*5-4*/
+
+.grid--item {
+  padding: 10px;
+  background: #00bbdd;
+  color: #fff;
+}
+/* grid-template-columns
+グリッド列のライン名とトラックのサイズ変更機能を定義 */
+
+.d--grid--columns {
+  display: grid;/*コンテナ*/
+  grid-template-columns: 200px 200px 200px;
+  gap: 10px;/*行や列の間のすき間*/
+}
+
+.d--grid--fr {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /*fr 枠に合わせたグリッドの大きさを自動的に調整*/
+  gap: 10px;
+  margin-top: 20px;
+}
+.d--grid--rows {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  grid-template-rows: 200px 200px;/*縦方向のサイズリスト */
+  margin-top: 20px;
+}
+
+.d--grid--wrapper {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.red--box {
+  grid-column: 1 / 3;/*グリッド領域の行の開始と終了の端を指定*/
+  background: #dd0700;
+}
+
+.green--box {
+  grid-row: 2 / 4;/*行グリッドの開始と終了についてまとめて指定する*/
+  background: #0bdd00;
+}
+
+.yellow--box {
+  grid-column: 2 / 4;
+  background: #d9dd00;
+}
